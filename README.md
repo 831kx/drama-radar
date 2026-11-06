@@ -1,9 +1,9 @@
 # 短剧雷达 drama-radar
 
 每天自动采集红果短剧官网公开的 4 个热播榜（综合 / 真人 / AI / 漫剧，各前 100 名），以及每部在榜剧的详情，
-算出**热门剧、飙升剧、潜力新剧、题材冷热**，发布成 GitHub Pages 上的分析看板，并导出 CSV 方便自己再分析。
+算出**热门剧、飙升剧、潜力新剧、题材冷热**，发布成 GitHub Pages 上的分析看板，并导出 CSV 方便自己再分析。看板地址：**https://831kx.github.io/drama-radar/**
 
-看板地址：**https://sentdz.github.io/drama-radar/**
+本仓库于 2026-11-07 从 [SentDz/drama-radar](https://github.com/SentDz/drama-radar) 部署。已有的 2026-10-13 至 2026-11-06 快照来自上游；后续由本仓库的 GitHub Actions 自动采集。北京时间每天 10:25、11:40、14:10、17:00、21:00 检查更新，官方未刷新时不重复写入。以下保留上游项目说明。
 
 参考了 [hongguo-radar](https://github.com/2252399314-cyber/hongguo-radar) 的思路，代码重新写过。2026-10-13 至 10-16 的历史数据迁移自 hongguo-radar（转换脚本见 [`scripts/import_hongguo_radar.py`](scripts/import_hongguo_radar.py)，快照里带 `imported_from` 标记），10-17 起为本项目自己采集。主要改进：
 
